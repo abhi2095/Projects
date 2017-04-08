@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px; 
+}
+#wrapper{
+	height: max-height;
+	width: max-width;
+}
+#saffron{
+	background-color: orange;
+	height: 235px;
+	width: max-width;
+
+}
+#white{
+	background-color: white;
+	height: 235px;
+	width: max-width;
+	
+
+}
+#Green{
+	background-color: green;
+	height: 235px;
+	width: max-width;
+}
