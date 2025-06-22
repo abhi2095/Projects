@@ -1,0 +1,11 @@
+Date,Description,Amount,Balance
+2024-06-01,Salary,3000,3000
+2024-06-02,Groceries,-100,2900
+2024-06-03,ATM Withdrawal,-200,2700
+2024-06-04,Car Payment,-400,2300
+2024-06-10,Rent,-1500,800
+2024-06-15,Online Purchase,-500,300
+2024-06-20,Rent,-1500,-1200
+2024-06-21,Bank Fee,-50,-1250
+2024-06-28,Salary,3000,1750
+2024-06-29,Vacation,-2000,-250

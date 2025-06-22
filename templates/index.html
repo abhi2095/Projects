@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Engine Upload</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .signals { margin-top: 1em; }
+        .signal { background: #ffdddd; border-left: 4px solid #f44336; padding: 8px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Upload Bank Statement</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="statement" accept=".csv" required>
+        <button type="submit">Analyze</button>
+    </form>
+    {% if signals is not none %}
+    <div class="signals">
+        <h2>Risk Signals</h2>
+        {% if signals %}
+            {% for s in signals %}
+                <div class="signal">{{ s }}</div>
+            {% endfor %}
+        {% else %}
+            <p>No risk signals detected.</p>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
